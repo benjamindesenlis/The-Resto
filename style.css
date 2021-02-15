@@ -1,0 +1,390 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Allura";
+  src: url(./Fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./Fonts/Poppins-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  list-style-type: none;
+  width: 75%;
+  max-width: 1200px;
+  margin-top: 25px;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: "Allura", Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: url(./images/bg-slider-06.jpg);
+  min-height: 800px;
+}
+
+.textbg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.textbg h2 {
+  font-size: 3.5rem;
+  color: rgb(211, 179, 93);
+  font-weight: 300;
+}
+
+.textbg h3 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.textbg p {
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: 50px;
+}
+
+.discover {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.discover h5 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: grey;
+}
+
+.discoleft {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+  border: rgb(211, 179, 93) dotted 2px;
+  margin: 20px;
+}
+
+.discoleft h2 {
+  color: rgb(211, 179, 93);
+  font-size: 2rem;
+}
+
+.discoleft h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.discoright {
+  background-image: url(./images/store-01.jpg);
+  height: 500px;
+  display: flex;
+}
+
+#avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.menu {
+  height: 1000px;
+  background: rgb(48, 48, 48);
+  /* align-items: center; */
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.entetemenu {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.menu h2 {
+  color: rgb(211, 179, 93);
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  align-content: center;
+  justify-content: space-around;
+  /* width: 70%; */
+  color: white;
+  font-weight: 600;
+}
+
+.entetemenu img {
+  padding: 30px;
+  position: relative;
+}
+
+.menuboard {
+  background: rgb(48, 48, 48);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "m1 m2"
+    "m3 m4"
+    "m5 m6"
+    "m7 m8";
+  padding: 30px;
+  margin: 0 auto;
+  width: 80%;
+  background: rgb(255, 255, 255);
+  border-top: orangered solid 2px;
+  position: relative;
+}
+
+.meal {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 88%;
+  border-bottom: rgba(63, 63, 63, 0.267) dotted 2px;
+
+  margin: 0 10px;
+}
+
+.meal img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+}
+
+.entetemenu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  background: url(./images/bg-menu-01.jpg) center/cover;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 350px;
+}
+
+/* *************************************************** */
+
+.booking h2 {
+  color: rgb(211, 179, 93);
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.booking {
+  background: rgb(48, 48, 48);
+  height: 700px;
+  /* display: grid; */
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 0 auto;
+  width: 80%;
+  height: 600px;
+  /* border: white solid 2px; */
+  padding: 30px;
+  text-align: center;
+  background: black;
+}
+
+.bookleft {
+  background: black;
+  color: white;
+  /* height: 400px; */
+  padding: 40px;
+
+  border: rgba(255, 235, 205, 0.431) dotted 1px;
+}
+
+.bookleft h6 {
+  color: rgb(211, 179, 93);
+  font-size: 1.6rem;
+}
+
+.bookleft h2 {
+  font-size: 3.7rem;
+}
+
+.bookleft h5 {
+  font-size: 2rem;
+  margin-top: -20px;
+}
+
+.bookright {
+  background: white;
+  color: black;
+  /* height: 400px; */
+  padding: 50px;
+  border: rgba(255, 235, 205, 0.431) dotted 1px;
+}
+
+.bookright p {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.mainright li {
+  width: 190px;
+}
+
+.bookright ul {
+  list-style-type: none;
+}
+
+.mainright ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  height: 230px;
+  align-items: center;
+}
+
+.mainright ul button {
+  background: black;
+  color: white;
+  height: 60px;
+  width: 190px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 30px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+input {
+  border: none;
+  border-bottom: grey solid 1px;
+  width: 220px;
+}
+
+/* **************************************** */
+
+.gridevent {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "a1 a2"
+    "a3 a2";
+  gap: 30px;
+  height: 500px;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.event1 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border: black solid 1px;
+}
+
+.eventimg1 {
+  background: url(./images/event-01.jpg) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.date1 {
+  background: grey;
+  padding: 16px;
+  align-content: center;
+  display: grid;
+  text-align: center;
+  width: 80px;
+  justify-content: center;
+}
+
+.event2 {
+  grid-area: a2;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: black solid 1px;
+  background: url(./images/event-03.jpg) center/cover;
+}
+
+.eventimg2 {
+  background: white;
+  height: 80%;
+  margin: 27px;
+}
+
+.date2 {
+  background: grey;
+  padding: 16px;
+  align-content: center;
+  display: grid;
+  text-align: center;
+  width: 80px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.locaevent2 {
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background: chartreuse;
+}
+
+.event3 {
+  display: grid;
+  align-content: center;
+  grid-area: a3;
+  grid-template-columns: 30% 70%;
+  border: black solid 1px;
+}
